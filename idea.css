@@ -1,0 +1,458 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to bottom right, #00ffff 0%, #ffff66 100%);
+  max-height: 500vh;
+}
+.route{
+  height: 180vh;
+  margin: 2%;
+  width: 96%;
+  background: linear-gradient(to bottom right, #ff9900 0%, #cc33ff 100%);
+  display: block;
+  border-radius: 2%;
+  box-shadow: 10px 10px 10px #111, -2px -2px 10px #222;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  overflow: hidden;
+  /* animation */
+  animation-name: picture;
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+@keyframes picture{
+  0%{
+  background: linear-gradient(to bottom right, #ff9900 0%, #cc33ff 100%);
+  }
+  25%{
+    background: linear-gradient(to top left, #66ffff 0%, #ff0066 100%);
+  }
+  50%{
+    background: linear-gradient(to top right, #990099 0%, #0000cc 100%);
+  }
+  75%{
+    background: linear-gradient(to top right, #00ff00 0%, #33ccff 100%);
+  }
+  100%{
+    background: linear-gradient(to top, #009900 0%, #ff6600 100%);
+  }
+}
+h1{
+  transform: rotate(270deg);
+  text-align: center;
+  font-size: 50px;
+}
+.point{
+  height: 100px;
+  width: 25px;
+  border-radius: 8px;
+  /* background: repeating-radial-gradient(red,green,yellow,blue,grey,pink,); */
+  /* border: 1px solid #fff; */
+  margin-left: 10.5px;
+  position: relative;
+  margin-top: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-stretch: ultra-condensed;
+  text-justify: newspaper;
+}
+.circle{
+  height: 20px;
+  width: 23px;
+  border-radius: 50%;
+  background:radial-gradient(red,rgb(255, 0, 179),green,rgb(3, 213, 250),blue,rgb(2, 247, 2));
+  animation-name: janesh;
+  box-shadow: 5px 5px 10px rgb(119, 14, 88), -5px -5px 10px rgb(88, 151, 16);
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+.circle1{
+  height: 20px;
+  width: 23px;
+  border-radius: 50%;
+  background:linear-gradient(rgb(255, 123, 0),rgb(255, 123, 0),rgb(3, 255, 129),rgb(3, 213, 250),rgb(76, 0, 255),rgb(202, 247, 2));
+  animation-name: janesh;
+  box-shadow: 5px 5px 10px rgb(131, 83, 21), -5px -5px 10px rgb(163, 94, 16);
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-delay: 1s;
+}
+.circle2{
+  height: 20px;
+  width: 23px;
+  border-radius: 50%;
+  background:linear-gradient(150deg,rgb(81, 255, 0),rgb(0, 255, 64),rgb(255, 23, 112),rgb(209, 3, 250),blue,rgb(2, 247, 2));
+  animation-name: janesh;
+  box-shadow: 5px 5px 10px rgb(209, 250, 29), -5px -5px 10px rgb(255, 56, 56);
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-delay: 1.5s;
+}
+.circle3{
+  height: 20px;
+  width: 23px;
+  border-radius: 50%;
+  background:linear-gradient(320deg ,red,rgb(255, 0, 179),green,rgb(3, 213, 250),blue,rgb(2, 247, 2));
+  animation-name: janesh;
+  box-shadow: 5px 5px 13px rgb(239, 5, 247), -5px -5px 10px rgb(73, 250, 3);
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+.circle4{
+  height: 20px;
+  width: 23px;
+  border-radius: 50%;
+  background:linear-gradient(789deg,red,rgb(255, 0, 179),green,rgb(3, 213, 250),blue,rgb(2, 247, 2));
+  animation-name: janesh;
+  box-shadow: 5px 5px 15px rgb(51, 253, 253), -5px -5px 15px rgb(232, 79, 252);
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+@keyframes janesh{
+from{
+  margin-top:0;
+}
+to{
+  margin-top: 80px;
+}
+}
+.design{
+  display: flex;
+  position: relative;
+}
+
+.top{
+  margin-top: -700px;
+  transform: rotate(90deg);
+  left: 500px;
+}
+.top1{
+  margin-top: -100px;
+  transform: rotate(90deg);
+  left: -500px;
+}
+.downdesign{
+  margin-top: 200px;
+}
+
+/* Second Part */
+.manhead{
+  height: 200px;
+  width: 200px;
+  /* background: #423; */ background: linear-gradient(to top right, #999966 0%, #663300 100%);
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  animation-name: head;
+  animation-duration: 1s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes head{
+  from{
+    transform-origin: center;
+    transform: rotate(10deg);
+  }
+  to{
+    transform-origin: center;
+    transform: rotate(-10deg);
+  }
+}
+
+.eye1{
+  height: 20px;
+  width: 40px;
+  background: #fff;
+  top: 60px;
+  left: 25px;
+  border-radius: 50%;
+  position: relative;
+}
+.eye2{
+  height: 20px;
+  width: 40px;
+  background: #fff;
+  top: 40px;
+  left: 133px;
+  border-radius: 50%;
+  position: relative;
+}
+.black{
+  height: 17px;
+  width: 17px;
+  background: #111;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 1px;
+  animation-name: eye;
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+
+@keyframes eye{
+  from{
+    display: none;
+    margin-left: 0;
+  }
+  to{
+    display: none;
+    margin-left: 20px;
+  }
+}
+
+.nose{
+  height: 35px;
+  width: 15px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius:80% ;
+  border-top-right-radius:80% ;
+  margin-top: 50px;
+  transform: rotate(180deg);
+}
+
+.mouth{
+  height: 12px;
+  width: 80px;
+  background: #fff;
+  border: none;
+  border-color: none;
+  margin-left: 60px;
+  margin-top: 20px;
+  animation-name: mouth;
+  animation-duration: 2s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+}
+@keyframes mouth{
+0%{
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius:0% ;
+  border-top-right-radius:0% ;
+}
+25%{
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius:0% ;
+  border-top-right-radius:100% ;
+}
+50%{
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius:100% ;
+  border-top-right-radius:0% ;
+}
+75%{
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius:50% ;
+  border-top-right-radius:50% ;
+}
+100%{
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius:100% ;
+  border-top-right-radius:0% ;
+}
+}
+
+/* neck section start */
+
+.neck{
+  height: 70px;
+  width: 70px;
+    background: linear-gradient(to bottom, #993300 0%, #996633 100%);
+  display: block;
+  margin: auto;
+  margin-top: -10px;
+}
+/* body part start */
+.body{
+  height: 300px;
+  width: 300px;
+  /* background: #423; */
+  display: block;
+  background: linear-gradient(to top left, #663300 0%, #800000 100%);
+  border-top-left-radius:30% ;
+  border-top-right-radius:30% ;
+  margin: auto;
+  margin-top: -10px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+/* hand part start */
+.lefthand{
+  height: 300px;
+  width: 50px;
+  /* background: #423; */
+  display: block;
+  margin: auto;
+  /* background: linear-gradient(to top left, #996633 0%, #663300 100%); */
+  background: linear-gradient(to top left, #663300 0%, #800000 100%);
+  margin-top: -260px; 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform-origin:top;
+ transform-style: preserve-3d;
+/* Animation */
+animation-name: lefthand;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  border-top-left-radius: 100%;
+  animation-direction:alternate;
+}
+@keyframes lefthand{
+  0%{
+    margin-left: 490px;
+    transform: rotate(20deg);
+  }
+  25%{
+    margin-left: 490px;
+    transform: rotate(50deg);
+  }
+  50%{
+    margin-left: 490px;
+    transform: rotate(90deg);
+  }
+  75%{
+    margin-left: 499px;
+    transform: rotate(130deg);
+  }
+  100%{
+    margin-left: 520px;
+    transform: rotate(165deg);
+  }
+}
+
+/* Lefthand animation end */
+
+/* Right hand animation start */
+
+.righthand{
+  height: 300px;
+  width: 50px;
+  /* background: #423; */
+  /* background: linear-gradient(to top left, #996633 0%, #663300 100%); */
+  background: linear-gradient(to top left, #663300 0%, #800000 100%);
+
+  display: block;
+  margin: auto;
+  margin-top: -290px; 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform-origin:top;
+ transform-style: preserve-3d;
+/* Animation */
+animation-name: righthand;
+  animation-duration: 0.5s;
+  animation-timing-function:ease-in-out;
+  animation-iteration-count: infinite;
+  border-top-right-radius: 100%;
+  animation-direction:alternate;
+}
+@keyframes righthand{
+  0%{
+    margin-left: 760px;
+    transform: rotate(-20deg);
+  }
+  25%{
+    margin-left: 760px;
+    transform: rotate(-50deg);
+  }
+  50%{
+    margin-left: 760px;
+    transform: rotate(-90deg);
+  }
+  75%{
+    margin-left: 740px;
+    transform: rotate(-130deg);
+  }
+  100%{
+    margin-left: 730px;
+    transform: rotate(-165deg);
+  }
+}
+
+
+/* Right hand animation end*/
+.leftleg{
+  height: 350px;
+  width: 90px;
+  /* background: #423; */
+  background: linear-gradient(to top left, #663300 0%, #800000 100%);
+  display: block;
+  left: -105px;
+  top: -80px;
+  position: relative;
+  margin: auto;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transform-origin: top;
+  transform: rotate(10deg);
+}
+.rightleg{
+  height: 350px;
+  width: 90px;
+  /* background: #423;*/
+  background: linear-gradient(to top left, #663300 0%, #800000 100%);
+  display: block;
+  left: 105px;
+  top: -430px;
+  position: relative;
+  margin: auto;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transform-origin: top;
+  transform: rotate(-10deg);
+}
+
+audio{
+  width: 5px;
+  height:5px;
+  display: block;
+  margin: auto;
+  background: #423;
+  top: 100px;
+  color: #423;
+  position: relative;
+  border-radius: 50%;
+}
+audio:hover{
+  width: 100px;
+  transition: 1s;
+  height: 50px;
+}
